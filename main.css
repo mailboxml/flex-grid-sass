@@ -66,6 +66,13 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+p::first-letter {
+color: #ff1b68;
+font-size: 1.2rem;
+font-weight:700 ;
+
+} 
+ 
 #product-overview {
   background-color: #ff1b68;
   height: 528px;
@@ -104,10 +111,15 @@ h1 {
   font-size: 22px;
 }
 
+.main-header__brand::after {
+content:" Home"; 
+color: #fff; 
+}
+
 .main-nav {
   display: inline-block;
   text-align: right;
-  width: calc(100% - 50px);  /* spatiu intre cele 2 valori si minus*/
+  width: calc(100% - 70px);  /* spatiu intre cele 2 valori si minus*/
   vertical-align: middle;
 }
 
