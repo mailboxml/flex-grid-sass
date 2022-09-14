@@ -68,7 +68,7 @@ body {
 
 p::first-letter {
 color: #ff1b68;
-font-size: 1.2rem;
+font-size: 1.5em;
 font-weight:700 ;
 
 } 
@@ -139,4 +139,18 @@ color: #fff;
 .main-nav__item a:active {
   color: #fff;
   border-bottom: 5px solid #fff;
+}
+
+.main-nav__item--cta a {
+  color: #fff;
+  background: url(freedom.jpg) ;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+main-nav__item--cta a:hover,
+main-nav__item--cta a:active {
+  color: #ff1b68;
+  background-color: #fff;
+  border-bottom: none;
 }
