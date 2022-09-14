@@ -74,7 +74,7 @@ font-weight:700 ;
 } 
  
 #product-overview {
-  background: url(freedom.jpg);
+  background: url("freedom.jpg");
   height: 528px;
   padding: 10px;
 }
@@ -152,5 +152,5 @@ main-nav__item--cta a:hover,
 main-nav__item--cta a:active {
   color: #ff1b68;
   background-color: #fff;
-  border-bottom: none;
+  border: none; /* nu functioneaza daca pun border-bottom*/
 }
