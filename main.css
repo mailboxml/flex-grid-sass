@@ -96,10 +96,18 @@ h1 {
   display: inline-block;
 }
 
+.main-header__brand {
+  text-decoration: none;
+  color: #0e4f1f;
+  font-weight: 700;
+  font-size: 22px;
+
+}
+
 .main-nav {
   display: inline-block;
   text-align: right;
-  width: calc(100% - 50px);  /* spatiu untre cele 2 valori si minus*/
+  width: calc(100% - 50px);  /* spatiu intre cele 2 valori si minus*/
 }
 
 .main-nav__item {
