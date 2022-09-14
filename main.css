@@ -94,6 +94,7 @@ h1 {
 
 .main-header > div {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .main-header__brand {
@@ -101,15 +102,26 @@ h1 {
   color: #0e4f1f;
   font-weight: 700;
   font-size: 22px;
-
 }
 
 .main-nav {
   display: inline-block;
   text-align: right;
   width: calc(100% - 50px);  /* spatiu intre cele 2 valori si minus*/
+  vertical-align: middle;
 }
 
 .main-nav__item {
-  display:inline-block ;
+  display:inline-block;
+  margin: 0 16px;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  color: #0e4f1f;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: #fff;
 }
