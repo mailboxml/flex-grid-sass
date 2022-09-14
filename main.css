@@ -119,7 +119,7 @@ color: #fff;
 .main-nav {
   display: inline-block;
   text-align: right;
-  width: calc(100% - 100px);  /* spatiu intre cele 2 valori si minus*/
+  width: calc(100% - 200px);  /* spatiu intre cele 2 valori si minus*/
   vertical-align: middle;
 }
 
