@@ -119,7 +119,7 @@ color: #fff;
 .main-nav {
   display: inline-block;
   text-align: right;
-  width: calc(100% - 70px);  /* spatiu intre cele 2 valori si minus*/
+  width: calc(100% - 100px);  /* spatiu intre cele 2 valori si minus*/
   vertical-align: middle;
 }
 
@@ -131,9 +131,12 @@ color: #fff;
 .main-nav__item a {
   text-decoration: none;
   color: #0e4f1f;
+  font-weight: 700;
+  padding: 4px 0;
 }
 
 .main-nav__item a:hover,
 .main-nav__item a:active {
   color: #fff;
+  border-bottom: 5px solid #fff;
 }
