@@ -81,6 +81,7 @@ font-weight:700 ;
 
 .section-title {
   color: #2ddf5c;
+  text-align: center;
 }
 
 #product-overview h1 {
@@ -99,6 +100,13 @@ font-weight:700 ;
   width: 30%;  
   vertical-align: middle;
 }
+
+.plan--highlighted {
+  background-color: #19b84c;
+  color: #fff;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);    /*  x y blur spread culoare */
+  }
+
 
 /* h1 {
   font-family: sans-serif;
