@@ -60,15 +60,6 @@ table {
 
 /* Sectiune MAIN */
 
-* {
-  box-sizing: border-box;
- }
-
-
-
-body {
-  font-family: 'Montserrat', sans-serif;
-}
 
 p::first-letter {
 color: #ff1b68;
@@ -144,27 +135,6 @@ color: #0e4f1f;
 }
 
 
-.button {
-  background-color: #0e4f1f;
-  color: #fff;
-  font: inherit;
-  border: 1.5px solid #0e4f1f;
-  padding: 8px;
-  border-radius: 8px;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.button:hover,
-.button:active {
-  background-color: #fff;
-  color: #0e4f1f;
-}
-
-.button:focus {
-  outline: none;  /* Conturul butonuli atunci cand este selectat - cu mouse, tab. Nu observ outline-ul in nicun browser, dar :focus-visible afiseaza outline-ul*/
-}
-
 
 #key-features {
   background-color: #ff1b68;
@@ -214,92 +184,4 @@ color: #0e4f1f;
   font-family: sans-serif;
 } */
 
-.main-header {
-    width: 100%;
-    background-color: #2ddf5c;
-    padding: 8px 16px;
-}
 
-.main-header > div {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.main-header__brand {
-  text-decoration: none;
-  color: #0e4f1f;
-  font-weight: 700;
-  font-size: 22px;
-}
-
-.main-header__brand::after {
-content:" Home"; 
-color: #fff; 
-}
-
-.main-nav {
-  display: inline-block;
-  text-align: right;
-  width: calc(100% - 200px);  /* spatiu intre cele 2 valori si minus*/
-  vertical-align: middle;
-}
-
-.main-nav__item {
-  display:inline-block;
-  margin: 0 16px;
-}
-
-.main-nav__item a {
-  text-decoration: none;
-  color: #0e4f1f;
-  font-weight: 700;
-  padding: 4px 0;
-}
-
-.main-nav__item a:hover,
-.main-nav__item a:active {
-  color: #fff;
-  border-bottom: 5px solid #fff;
-}
-
-.main-nav__item--cta a {
-  color: #fff;
-  background-color:#ff1b68 ;
-  padding: 8px 16px;
-  border-radius: 8px;
-}
-
-.main-nav__item--cta a:hover,
-.main-nav__item--cta a:active {
-  color: #ff1b68;
-  background-color: #fff;
-  border-bottom: none; 
-}
-
-.main-footer {
-  background-color: #000;
-  padding: 32px;
-  margin-top: 48px;
-}
-
-.main-footer__links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.main-footer__link {
-  display: inline-block;
-  margin: 0 16px;
-}
-
-.main-footer__link > a {
-color: #fff;
-text-decoration: none;
-}
-
-.main-footer__link > a:hover,         /* click + ALT pt a selecta mai multe elemente si a le modifica*/
-.main-footer__link > a :active {
-color: #ccc;
-}
