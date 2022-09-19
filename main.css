@@ -84,6 +84,12 @@ font-weight:700 ;
   font-family: 'Anton', sans-serif;
  
 }
+.plan__list {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+
+}
 
 .plan {
   background-color: #d5ffdc;
