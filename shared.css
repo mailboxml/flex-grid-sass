@@ -17,6 +17,9 @@
 
 .main-header {
     width: 100%;
+    /* top: 0;
+    left: 0; top si left 0 in cazul in care avem margine pe elementul parinte (html, body ..)   */
+    position: fixed;
     background-color: #2ddf5c;
     padding: 8px 16px;
 }
