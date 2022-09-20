@@ -17,6 +17,7 @@
 
 .main-header {
     width: 100%;
+   position: fixed;
     /* top: 0;
     left: 0; top si left 0 in cazul in care avem margine pe elementul parinte (html, body ..)   */
     position: fixed;
