@@ -22,6 +22,7 @@
     left: 0;  /* top si left 0 in cazul in care avem margine pe elementul parinte (html, body ..) */  
     background-color: #2ddf5c;
     padding: 8px 16px;
+    z-index: 1; /* ca sa fie deasupra elementelor cu position fixed  cu z-index auto*/
 }
 
 .main-header > div {
