@@ -72,7 +72,7 @@ font-weight:700 ;
   background: url("freedom.jpg");
   height: 528px;
   padding: 10px;
-  margin-top: 70px;
+  margin-top: 67px;
   position: relative; /*relative - fiindca nu ii modifica pozitia, dar putem  modifica elementelul copil H1 cu position absolute */
 }
 
