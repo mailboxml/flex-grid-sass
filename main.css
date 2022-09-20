@@ -73,6 +73,7 @@ font-weight:700 ;
   height: 528px;
   padding: 10px;
   margin-top: 70px;
+  position: relative; /*relative - fiindca nu ii modifica pozitia, dar putem  modifica elementelul copil H1 cu position absolute */
 }
 
 .section-title {
@@ -83,8 +84,11 @@ font-weight:700 ;
 #product-overview h1 {
   color: #fff;
   font-family: 'Anton', sans-serif;
- 
+  position: absolute;
+  bottom: 5%;
+  left: 3%;   
 }
+
 .plan__list {
   width: 80%;
   margin: auto;
