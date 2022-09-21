@@ -70,10 +70,10 @@ font-weight:700 ;
  
 #product-overview {
   /* background: url("/freedom.jpg")  left 10% bottom 20%/cover no-repeat border-box; */
-  background-image: url("freedom.jpg");
+  background-image: url("images/freedom.jpg");
   background-position: left 10% bottom 20%; /* crop left 10%, crop bottom 20%*/
   background-size: cover;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-origin: border-box;
   background-clip: border-box;
   height: 528px;

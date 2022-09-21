@@ -35,7 +35,14 @@
   color: #0e4f1f;
   font-weight: 700;
   font-size: 22px;
+  display: inline-block;
+  height: 25px;
 }
+
+.main-header__brand img {
+  height: 100%;               /* containerul .main-header__brand fiind inline-block, 100% ajusteaza img la dimensiunea container*/
+}
+
 
 .main-header__brand::after {
 content:" Home"; 
