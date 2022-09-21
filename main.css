@@ -69,15 +69,15 @@ font-weight:700 ;
 } 
  
 #product-overview {
-  background: linear-gradient(to top, rgba(80,68,18,0.6) 10%, transparent), url("images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box, #fff; /*(fallback/ se despart prin virgula layer-ele. gradientul primul)*/
+  background: linear-gradient(to top, rgba(80,68,18,0.6) 10%, transparent), url("images/freedom.jpg") left 10% bottom 10% /cover no-repeat border-box, #fff; /*(fallback/ se despart prin virgula layer-ele. gradientul primul)*/
   /* background-image: linear-gradient(to top, rgba(80,68,18,0.6) 10%, transparent); /* overlay semitransparent:   linear-gradient(directie, culoare, culoare=transparent */
-  background-image: url("images/freedom.jpg");
+  /* background-image: url("images/freedom.jpg"); */
   /* background-position: left 10% bottom 20%; /* crop left 10%, crop bottom 20%*/
-  /*background-size: cover;
+  /* background-size: cover;
   background-repeat: no-repeat;
   background-origin: border-box;
   background-clip: border-box; */
-  height: 528px;
+  height: 700px;
   padding: 10px;
   margin-top: 67px;
   position: relative; /*relative - fiindca nu ii modifica pozitia, dar putem  modifica elementelul copil H1 cu position absolute */
