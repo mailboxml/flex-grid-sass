@@ -42,6 +42,33 @@
   vertical-align: middle;
 }
 
+/*
+----------------------
+Mobile NAV
+----------------------
+*/
+.toggle-button {
+  width: 3rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background-color: rgb(5, 34, 97);
+  display: block;
+  margin: 0.3rem 0;
+}
+
 .main-header__brand {
   text-decoration: none;
   color: #0e4f1f;
@@ -49,6 +76,7 @@
   font-size: 1.5rem;
   display: inline-block;
   height: 1.5rem;
+  vertical-align: middle;
 }
 
 .main-header__brand img {
@@ -73,7 +101,36 @@ color: #fff;
   margin: 0 1rem;
 }
 
-.main-nav__item a {
+.mobile-nav {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: rgba(245, 243, 243, 0.8);
+  width: 80vw; /* 80% in curs. poate nu e ok pe mobil*/
+  display: none;
+}
+
+.mobile-nav__items {
+  list-style: none;
+  text-align: center;
+  margin: 10% auto;
+  padding: 0;
+  width: 90%;
+  height: 100%;
+  }
+
+  .mobile-nav__item {
+    margin: 1rem 0;
+  }
+  
+  .mobile-nav__item a {
+    font-size: 1.5rem;
+  }
+
+.main-nav__item a,
+.mobile-nav__item a {
   text-decoration: none;
   color: #0e4f1f;
   font-weight: 700;
@@ -86,7 +143,8 @@ color: #fff;
   border-bottom: 5px solid #fff;
 }
 
-.main-nav__item--cta a {
+.main-nav__item--cta a 
+.mobile-nav__item--cta a {
   color: #fff;
   background-color:#ff1b68 ;
   padding: 0.5rem 1rem;
@@ -94,7 +152,9 @@ color: #fff;
 }
 
 .main-nav__item--cta a:hover,
-.main-nav__item--cta a:active {
+.main-nav__item--cta a:active, 
+.mobile-nav__item--cta a:hover,
+.mobile-nav__item--cta a:active {
   color: #ff1b68;
   background-color: #fff;
   border-bottom: none; 
