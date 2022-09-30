@@ -122,28 +122,29 @@ Doar pt exemplificare, nu ne trebuie
   text-align: center;
 }
 
-
-.plan__list {
-  width: 80%;
-  margin: auto;
+/* pt mobil nu e nevoie de acest container */
+/* .plan__list {
+  width: 100%;
   text-align: center;
 
-}
+} */
+
+/* Mobile first design -- tot fisierul este scris pt mobil, iar @media il folosim pt ajustarea la desktop */
 
 .plan {
   background-color: #d5ffdc;
   text-align: center;
   padding: 1rem;
-  margin: 0.5rem;
-  display: inline-block;
-  width: 30%;  
-  vertical-align: middle;
+  margin: 0.5rem 0;
+  /* display: inline-block; */
+  width: 100%;  
+  /* vertical-align: middle; */
 }
 
 .plan--highlighted {
   background-color: #19b84c;
   color: #fff;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);    /*  x y blur spread culoare */
+  /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);     x y blur spread culoare */
   }
 
 .plan__annotation {
