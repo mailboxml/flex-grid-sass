@@ -221,11 +221,16 @@ color: #0e4f1f;
   text-align: center;
 }
 
+@media (min-width: 40rem) {
 .key-feature {
   display: inline-block;
   width: 30%;
   vertical-align: top;
+  max-width: 25rem;
+  }
 }
+
+
 
 .key-feature__image {
   background: #f0eeee;
