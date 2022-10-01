@@ -149,12 +149,13 @@ Doar pt exemplificare, nu ne trebuie
   .plan__list {
      width: 100%;
      text-align: center;
+  }
   
   .plan {
     display: inline-block;
     width: 30%;
     vertical-align: middle;
-    min-height: 13rem;
+    min-width: ;: 13rem;
     max-width: 25rem;
   }
 
