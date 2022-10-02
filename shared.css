@@ -69,6 +69,11 @@ Mobile NAV
   margin: 0.3rem 0;
 }
 
+
+
+
+
+
 .main-header__brand {
   text-decoration: none;
   color: #0e4f1f;
@@ -143,7 +148,7 @@ color: #fff;
   border-bottom: 5px solid #fff;
 }
 
-.main-nav__item--cta a 
+.main-nav__item--cta a, 
 .mobile-nav__item--cta a {
   color: #fff;
   background-color:#ff1b68 ;
