@@ -80,12 +80,12 @@ Mobile NAV
   font-weight: 700;
   font-size: 1.5rem;
   display: inline-block;
-  height: 1.5rem;
+  /* height: 1.5rem; */
   vertical-align: middle;
 }
 
 .main-header__brand img {
-  height: 100%;               /* containerul .main-header__brand fiind inline-block, 100% ajusteaza img la dimensiunea container*/
+  height: 2.5rem;               /* containerul .main-header__brand fiind inline-block, 100% ajusteaza img la dimensiunea container*/
 }
 
 
@@ -95,11 +95,19 @@ color: #fff;
 }
 
 .main-nav {
-  display: inline-block;
+  display: none;
+  
+}
+
+@media (min-width: 40rem) {
+
+.main-nav { 
   text-align: right;
-  width: calc(100% - 200px);  /* spatiu intre cele 2 valori si minus*/
+  width: calc(100% - 70px);  /* spatiu intre cele 2 valori si minus*/
   vertical-align: middle;
 }
+}
+
 
 .main-nav__item {
   display:inline-block;
@@ -165,7 +173,11 @@ color: #fff;
   border-bottom: none; 
 }
 
-
+@media (min-width: 40rem) {
+  .toggle-button {
+    display: none;
+  }
+}
 
 
 /* CSS BUTOANE*/
@@ -210,10 +222,17 @@ color: #fff;
   }
   
   .main-footer__link {
+    display: block;
+    margin: 1rem auto;
+  }
+  
+  @media (min-width: 40rem) {
+  .main-footer__link {
     display: inline-block;
     margin: 0 1rem;
   }
-  
+}
+
   .main-footer__link > a {
   color: #fff;
   text-decoration: none;
