@@ -1,40 +1,31 @@
-
- /* CSS Font  */
-
 * {
-    box-sizing: border-box;
-   }
-  
-  
-  
-  body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-  }
-  
+  box-sizing: border-box;
+}
 
-  .backdrop {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 20;
-      }
-  
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
 
-/* CSS MAIN + NAV */
+.backdrop {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
 
 .main-header {
-   width: 100%;
-   position: fixed;
-    top: 0;
-    left: 0;  /* top si left 0 in cazul in care avem margine pe elementul parinte (html, body ..) */  
-    background-color: #2ddf5c;
-    padding: 0.5rem 1rem;
-    z-index: 1; /* ca sa fie deasupra elementelor cu position fixed  cu z-index auto*/
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #2ddf5c;
+  padding: 0.5rem 1rem;
+  z-index: 1;
 }
 
 .main-header > div {
@@ -42,14 +33,9 @@
   vertical-align: middle;
 }
 
-/*
-----------------------
-Mobile NAV
-----------------------
-*/
 .toggle-button {
   width: 3rem;
-  background-color: transparent;
+  background: transparent;
   border: none;
   cursor: pointer;
   padding-top: 0;
@@ -64,39 +50,28 @@ Mobile NAV
 .toggle-button__bar {
   width: 100%;
   height: 0.2rem;
-  background-color: rgb(5, 34, 97);
+  background: black;
   display: block;
-  margin: 0.3rem 0;
+  margin: 0.6rem 0;
 }
 
-
-
-
-
-
 .main-header__brand {
-  text-decoration: none;
   color: #0e4f1f;
-  font-weight: 700;
+  text-decoration: none;
+  font-weight: bold;
   font-size: 1.5rem;
+  /* width: 20px; */
   display: inline-block;
-  /* height: 1.5rem; */
   vertical-align: middle;
 }
 
 .main-header__brand img {
-  height: 2.5rem;               /* containerul .main-header__brand fiind inline-block, 100% ajusteaza img la dimensiunea container*/
-}
-
-
-.main-header__brand::after {
-content:" Home"; 
-color: #fff; 
+  height: 2.5rem;
+  /* width: 100%; */
 }
 
 .main-nav {
   display: none;
-  
 }
 
 .main-nav__items {
@@ -105,147 +80,139 @@ color: #fff;
   list-style: none;
 }
 
-
-@media (min-width: 40rem) {
-
-.main-nav { 
-  text-align: right;
-  width: calc(100% - 70px);  /* spatiu intre cele 2 valori si minus*/
-  vertical-align: middle;
-}
-}
-
-
 .main-nav__item {
-  display:inline-block;
+  display: inline-block;
   margin: 0 1rem;
 }
-
-.mobile-nav {
-  position: fixed;
-  z-index: 3;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  background-color: rgba(245, 243, 243, 0.8);
-  width: 80vw; /* 80% in curs. poate nu e ok pe mobil*/
-  display: none;
-}
-
-.mobile-nav__items {
-  list-style: none;
-  text-align: center;
-  margin: 10% auto;
-  padding: 0;
-  width: 90%;
-  height: 100%;
-  }
-
-  .mobile-nav__item {
-    margin: 1rem 0;
-  }
-  
-  .mobile-nav__item a {
-    font-size: 1.5rem;
-  }
 
 .main-nav__item a,
 .mobile-nav__item a {
   text-decoration: none;
   color: #0e4f1f;
-  font-weight: 700;
+  font-weight: bold;
   padding: 0.2rem 0;
 }
 
 .main-nav__item a:hover,
 .main-nav__item a:active {
-  color: #fff;
-  border-bottom: 5px solid #fff;
+  color: white;
+  border-bottom: 5px solid white;
 }
 
-.main-nav__item--cta a, 
+.main-nav__item--cta a,
 .mobile-nav__item--cta a {
-  color: #fff;
-  background-color:#ff1b68 ;
+  color: white;
+  background: #ff1b68;
   padding: 0.5rem 1rem;
   border-radius: 8px;
 }
 
 .main-nav__item--cta a:hover,
-.main-nav__item--cta a:active, 
+.main-nav__item--cta a:active,
 .mobile-nav__item--cta a:hover,
 .mobile-nav__item--cta a:active {
   color: #ff1b68;
-  background-color: #fff;
-  border-bottom: none; 
+  background: white;
+  border: none;
 }
 
 @media (min-width: 40rem) {
   .toggle-button {
     display: none;
   }
+
+  .main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 44px);
+    vertical-align: middle;
+  }
 }
 
+.main-footer {
+  background: black;
+  padding: 2rem;
+  margin-top: 3rem;
+}
 
-/* CSS BUTOANE*/
+.main-footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
+.main-footer__link {
+  display: block;
+  margin: 1rem 0;
+}
+
+.main-footer__link a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color: #ccc;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 80%;
+  height: 100vh;
+}
+
+.mobile-nav__items {
+  width: 90%;
+  height: 100%;
+  list-style: none;
+  margin: 10% auto;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-nav__item {
+  margin: 1rem 0;
+}
+
+.mobile-nav__item a {
+  font-size: 1.5rem;
+}
 
 .button {
-    background-color: #0e4f1f;
-    color: #fff;
-    font: inherit;
-    border: 1.5px solid #0e4f1f;
-    padding: 0.5rem;
-    border-radius: 8px;
-    font-weight: 700;
-    cursor: pointer;
-  }
-  
-  .button:hover,
-  .button:active {
-    background-color: #fff;
-    color: #0e4f1f;
-  }
-  
-  .button:focus {
-    outline: none;  /* Conturul butonuli atunci cand este selectat - cu mouse, tab. Nu observ outline-ul in nicun browser, dar :focus-visible afiseaza outline-ul*/
-  }
-  
+  background: #0e4f1f;
+  color: white;
+  font: inherit;
+  border: 1.5px solid #0e4f1f;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
+.button:hover,
+.button:active {
+  background: white;
+  color: #0e4f1f;
+}
 
-/* CSS FOOTER */
+.button:focus {
+  outline: none;
+}
 
-.main-footer {
-    background-color: #000;
-    padding: 2rem;
-    margin-top: 3rem;
-  }
-  
-  .main-footer__links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  
-  .main-footer__link {
-    display: block;
-    margin: 1rem auto;
-  }
-  
-  @media (min-width: 40rem) {
+.open {
+    display: block !important;
+}
+
+@media (min-width: 40rem) {
   .main-footer__link {
     display: inline-block;
     margin: 0 1rem;
   }
 }
-
-  .main-footer__link > a {
-  color: #fff;
-  text-decoration: none;
-  }
-  
-  .main-footer__link > a:hover,         /* click + ALT pt a selecta mai multe elemente si a le modifica*/
-  .main-footer__link > a :active {
-  color: #ccc;
-  }
