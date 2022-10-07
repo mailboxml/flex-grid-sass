@@ -93,7 +93,7 @@ font-weight:700 ;
 }
 
 /* 40rem = 640px */
-@media (min-width: 40rem) {
+@media (min-width: 40rem)  and (min-height: 40rem) {
 #product-overview {
   height: 40vh;
   background-position: 50% 25%;
