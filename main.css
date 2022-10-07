@@ -80,7 +80,7 @@ font-weight:700 ;
   /* background-size: cover; */
   width: 100vw;
   height: 40vh;
-  margin-top: 2.8rem;
+  /* margin-top: 2.8rem; */ /* este definit in shared -> main pt pozitionarea footer*/
   position: relative; /*relative - fiindca nu ii modifica pozitia, dar putem  modifica elementelul copil H1 cu position absolute */
  }  
 
