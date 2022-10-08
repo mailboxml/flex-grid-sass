@@ -35,7 +35,7 @@ function functie_inchidere_modal() {
 toggleButton.addEventListener("click", function() {
  
     mobileNav.style.display = "block";
-    backdrop.style.display = "block"
+    backdrop.style.display = "block";
 }
 );
 
