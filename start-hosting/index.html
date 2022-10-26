@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Start - Flex Grid Sass</title>
+    
+    <!-- meta descrieri  seo -->
+<meta name="robots" content="noindex, nofollow" /> <!--  de schimbat in: <meta name="robots" content="index, follow" />   follow/nofolow in meta se aplica intregii pagini, daca trebuie altceva. se aplica separat linkului -->
+<meta name="description" content="This is an example of a meta description. This will often show up in search results. recommend descriptions between 50 and 160 characters. meta description can, however, impact a page's click-through rate (CTR) in Google SERP.neither meta descriptions nor meta keywords factor into Google's ranking algorithms for web search">
+<link rel="canonical" href="http://example.com/" />   <!--  If you have pages on your site that are almost identical, then you may need to inform search engines which one to prioritize. Or you might have syndicated content on your site which was republished elsewhere. You can do both of these things without incurring a duplicate content penalty  -->
+<meta name="keywords" content="Microsoft maps, map, gis, API, SDK, animate, animation, symbol, pushpin, marker, pin" />
+<meta name="author" content="autorul site-ului" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
@@ -14,3 +23,66 @@
 
     <link rel="stylesheet" href="shared.css">
     <link rel="stylesheet" href="start-hosting.css">
+    
+    </head>  
+      
+    <body>
+        <div class="backdrop"></div>
+        <div class="modal">
+            <h1 class="modal__title">Do you want to continue ?</h1>
+            <div class="modal__actions">
+                <a href="start-hosting/index.html" class="modal__action">Yes!</a>
+                <button class="modal__action modal__action--negative">No!</button>
+            </div>
+        </div>
+        <header class="main-header">
+            <div>
+                <button class="toggle-button">
+                    <span class="toggle-button__bar"></span>
+                    <span class="toggle-button__bar"></span>
+                    <span class="toggle-button__bar"></span>
+                </button>
+                <a class="main-header__brand" href="index.html"> <img src="images/uhost-icon.png" alt=""> </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="main-nav__items">
+                    <li class="main-nav__item"> <a href="packages/index.html" target="_blank">Packages</a> </li>
+                    <li class="main-nav__item"> <a href="customers/index.html" target="_blank">Customers</a></li>
+                    <li class="main-nav__item main-nav__item--cta"><a href="start-hosting/index.html">Start Hosting</a></li>
+                </ul>
+            </nav>
+         </header>
+    
+         <nav class="mobile-nav">
+            <ul class="mobile-nav__items">
+                <li class="mobile-nav__item">
+                    <a href="packages/index.html">Packages</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="customers/index.html">Customers</a>
+                </li>
+                <li class="mobile-nav__item mobile-nav__item--cta">
+                    <a href="start-hosting/index.html">Start Hosting</a>
+                </li>
+            </ul>
+         </nav>
+    
+        <main>
+         
+        </main>
+    
+        <footer class="main-footer">
+            <nav>
+                <ul class="main-footer__links">
+                    <li class="main-footer__link">
+                        <a href="#">Support</a>
+                    </li>
+                    <li class="main-footer__link">
+                        <a href="#">Terms of use</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+        <script src="shared.js"></script>
+    </body>
+    </html>   
