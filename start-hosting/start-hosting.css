@@ -7,10 +7,26 @@ main {
     color: #ff5454;
 }
 
+.signup-form {
+    padding:  1rem;
+}
+
 .signup-form label,
 .signup-form input,
 .signup-form select {
     display: block;
     margin-top: 1rem;
     width: 100%;
+}
+
+/* .signup-form input[type="checkbox"] */
+.signup-form input[id*="terms"] , /* toate id-urile */
+.signup-form input[id*="terms"] + label { /* + label = selecteaza elementul  care vine imediat, adica label*/
+    display: inline-block;
+    width: auto;
+}
+
+.signup-form button[type="submit"] {
+    display: block;
+    margin-top: 1rem;
 }
