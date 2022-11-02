@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ro">
-<head> 
+<head>   
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +28,12 @@
       
     <body>
         <div class="backdrop"></div>
-        
+        <div class="modal">
+            <h1 class="modal__title">Do you want to continue ?</h1>
+            <div class="modal__actions">
+                <a href="start-hosting/index.html" class="modal__action">Yes!</a>
+                <button class="modal__action modal__action--negative">No!</button>
+            </div>
         </div>
         <header class="main-header">
             <div>
@@ -66,24 +71,24 @@
             <h1 class="signup-title">Ceva text cu H1 si clasa css</h1>
             <form action="index.html" class="signup-form">
                 <label for="title">Title</label>
-                <select id="title" required>
+                <select id="title">
                     <option value="mr">Dl.</option>
                     <option value="ms">Dna.</option>
                 </select>
 
                 <label for="first-name">Prenume:</label>
-                <input type="text" id="first-name" required>
+                <input type="text" id="first-name">
                 
                 <label for="last-name">Nume:</label>
-                <input type="text" id="last-name" required >
+                <input type="text" id="last-name">
                 
                 <label for="email" id="email">E-mail:</label>
-                <input type="email" id="email" required>
+                <input type="email" id="email">
                 
                 <label for="password" id="password">Parola:</label>
-                <input type="password" id="password" required>
+                <input type="password" id="password">
 
-                <input type="checkbox" id="agree-terms" required>
+                <input type="checkbox" id="agree-terms">
                 <label for="agreed-terms"> <a href="">Termene &amp; conditii </a></label>
 
                 <button type="submit" class="button">Abonare</button>
@@ -104,6 +109,6 @@
                 </ul>
             </nav>
         </footer>
-       
+        <script src="../shared.js"></script>
     </body>
     </html>   

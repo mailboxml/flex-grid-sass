@@ -1,3 +1,19 @@
+/* Importa font-family direct in fisierul CSS. Nu mai e nevoi sa il includem in fiecare pagina in html head */
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+
+/* Import fonturi salvate local in server */
+
+@font-face {
+  font-family: 'Courier New', ;
+  src: url(../flex-grid-sass/)  format("truetype");   /* calea unde este salvat in server (extensii .ttf .otf .woff = recomandat*/
+  font-display: block;  /* auto = block. incarca cu intrarziere fonturile, dar rezerva spatiul - eperimental*/
+}
+
+
+
 * {
   box-sizing: border-box;
 }
