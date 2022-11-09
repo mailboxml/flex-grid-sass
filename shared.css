@@ -48,12 +48,16 @@ main {
   background: #2ddf5c;
   padding: 0.5rem 1rem;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+/*   nu ne mai trebuie, parintele este flex box
 .main-header > div {
   display: inline-block;
   vertical-align: middle;
-}
+} */
 
 .toggle-button {
   width: 3rem;
@@ -81,15 +85,16 @@ main {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  height: 2.5rem;
+  /* height: 2.5rem;  definim dimensiunea direct pe elementul copil - imaginea */
   /* width: 20px; */
-  display: inline-block;
-  vertical-align: middle;
+  /* display: inline-block;
+  vertical-align: middle; */
 }
 
 .main-header__brand img {
-  height: 100%;   /* mosteneste heieght 2.5rem de parinte*/
+  height: 2.5rem;   /* mosteneste heieght 2.5rem de parinte*/
   /* width: 100%; */
+  vertical-align: middle;
 }
 
 .main-nav {
@@ -100,10 +105,11 @@ main {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
 }
 
 .main-nav__item {
-  display: inline-block;
+  /* display: inline-block;  am transformat parintele in flex*/
   margin: 0 1rem;
 }
 
@@ -144,10 +150,11 @@ main {
   }
 
   .main-nav {
-    display: inline-block;
+    /* display: inline-block;
     text-align: right;
     width: calc(100% - 44px);
-    vertical-align: middle;
+    vertical-align: middle; */
+    display: flex;
   }
 }
 
