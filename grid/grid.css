@@ -1,0 +1,36 @@
+
+body {
+    box-sizing: border-box;
+    font-weight: 900;
+    text-align: center;
+    font-variant: small-caps;
+    display: grid;
+    height: 100vh;  /*daca folosesc 100% in loc de 100vh nu se activeaza inaltimea. trebuie introdus html{} cu height 100%*/
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 4.5rem auto 3.5rem;
+}
+
+header {
+    background-color: gray ;
+    color: white ;
+    grid-column-start: 1;
+    grid-column-end: -1;
+      }
+
+main {
+    background-color:burlywood ;
+    color:white ;
+}
+
+aside {
+    background-color:green ;
+    color: white;
+   
+}
+
+footer {
+    background-color:orchid ;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
