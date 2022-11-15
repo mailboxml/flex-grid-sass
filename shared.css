@@ -22,11 +22,20 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   display: grid;
+  grid-template-rows: 3.5rem auto 8rem;
+  grid-template-areas:  "header"
+                        "main"
+                        "footer";
+  height: 100vh;
 }
 
 main {
-  min-height: calc(100vh - 2.8rem - 8rem);
+  /* min-height: calc(100vh - 2.8rem - 8rem); */
   margin-top: 2.8rem;
+  /* grid-row-start: 2;
+  grid-row-end: 3; */
+  /* grid-row: 2 / 3; */
+  grid-area: main;
 }
 
 
@@ -163,6 +172,8 @@ main {
   background: black;
   padding: 2rem;
   margin-top: 3rem;
+  /* grid-row: 3 / 4; */
+  grid-area: footer;
 }
 
 .main-footer__links {
