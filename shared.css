@@ -22,7 +22,7 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   display: grid;
-  grid-template-rows: 3.5rem auto fit-content(8rem);
+  grid-template-rows: 3.5rem auto fit-content(8rem);  /* <---  fit-content(valoare default folosita daca continutul este  mai mic decat valoarea default, daca e mai mare creste cu continutul)  */
   grid-template-areas:  "header"
                         "main"
                         "footer";
