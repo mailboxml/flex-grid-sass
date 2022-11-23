@@ -69,7 +69,7 @@ font-weight:700 ;
 } 
  
 #product-overview {
-  background: linear-gradient(to top, rgba(80,68,18,0.6) 10%, transparent), url("images/freedom.jpg") center/cover  no-repeat border-box, #fff; /*(fallback/ se despart prin virgula layer-ele. gradientul primul)
+  background: linear-gradient(to top, rgba(80,68,18,0.6) 10%, transparent), url("images/freedom.jpg") center/cover  no-repeat border-box, rgb(255, 255, 255); /*(fallback/ se despart prin virgula layer-ele. gradientul primul)
   /* background-image: linear-gradient(to top, rgba(80,68,18,0.6) 10%, transparent); /* overlay semitransparent:   linear-gradient(directie, culoare, culoare=transparent */
   /* background-image: url("images/freedom.jpg"); */
   /*background-size: cover;
@@ -85,7 +85,7 @@ font-weight:700 ;
  }  
 
 #product-overview h1 {
-  color: #fff;
+  color: rgb(236, 75, 11);
   font-family: 'Anton', sans-serif;
   position: absolute;
   bottom: 5%;
