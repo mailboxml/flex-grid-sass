@@ -38,10 +38,13 @@ main {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 1.2rem; /* departeaza de marginea sectiunii*/
+    /* margin: 1.2rem; departeaza de marginea sectiunii */
     font-size: 0.8rem;
     color: #fff;
     background-color: #ff5454;
+    margin:0; /* anulez marginea pentru a aplica transform*/
+    transform:  rotateZ('45deg');
+    transform-origin: center; /*default*/
 
 }
 
