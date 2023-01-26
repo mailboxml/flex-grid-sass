@@ -43,7 +43,7 @@ main {
     color: #fff;
     background-color: #ff5454;
     margin:0; /* anulez marginea pentru a aplica transform*/
-    transform:  rotateZ('45deg');
+    transform:rotateZ(45deg);
     transform-origin: center; /*default*/
 
 }
