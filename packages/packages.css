@@ -25,8 +25,17 @@ main {
 .package:active {
     box-shadow: 2px 2px 10px rgba(14, 79, 31, 0.95);
     border-color: #ff5454 !important;  /* folosit ca exemplificare*/
+    /* Adaugare animatie cu keyframes */
+    animation: animatie-push-up 1s ease-in-out forwards;
 }
 
+@keyframes animatie-push-up {
+
+    0% { transform: translateY(0);} /* from = 0% */
+    33% {transform: translateY(-1.5rem);} /* to =33% valoarea negativa ridica containerul*/
+    100% {transform: translateY(1rem);} /* to = 100% coboara containerul*/
+
+}
 
 .package a {
     text-decoration: none;

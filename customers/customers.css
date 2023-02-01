@@ -50,6 +50,17 @@ main {
     transform: skew(-20deg);
   }
 
+  #customer-1:hover .testimonial__image-container {  /* :hover pe primul element din selectie !*/
+    animation: flip 1s ease-in-out forwards;  
+  }
+
+  @keyframes flip {
+    0% {transform: translateY(0) skew(20deg);}
+    50% {transform: translateY(60deg) skew(20deg);}
+    100% {transform: translateY(360deg) skew(20deg);}
+  }
+
+
 @media (min-width: 40rem) {
   .testimonial__image-container {
     /* display: inline-block; */

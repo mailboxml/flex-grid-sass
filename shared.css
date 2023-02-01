@@ -202,7 +202,9 @@ main {
 }
 
 .mobile-nav {
-  display: none;
+  /* display: none; */
+  transform: translateX(-100%);     /* Tb adaugat eventListner pe clasa css, nu pe proprietate css ca sa functioneze*/
+  transition: transform 300ms ease-out;
   position: fixed;
   z-index: 101;
   top: 0;
